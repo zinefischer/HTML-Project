@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+}
+
+div img {
+    width: 100px;
+}
+
+header {
+    background-color: #11009E;
+}
+
+nav ul li {
+    list-style: none;
+    font-family: 'Archivo', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+main {
+    font-family: 'Roboto', sans-serif;
+    background-color: #EBECF1;
+    height: 87%;
+    width: 100%;
+}
+
+
+footer {
+    background-color: #11009E;
+    text-align: center;
+}
+
+footer h3 {
+    color: white;
+    font-family: 'Kanit', sans-serif;
+}
+
+
+.title {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 50px 0 50px 0;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#sect_dos {
+    display: flex;
+    height: 50%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.subtitle {
+    font-size: 2.5rem;
+}
+
+#contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#name {
+    border: 1px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 50%;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#correo {
+    border: 1px solid black;
+    width: 50%;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#coment {
+    border: 1px solid black;
+    width: 50%;
+    height: 200px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#enviar {
+    background-color: #F1F6F9;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
+@media screen and (max-width: 768px) {
+    a {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        height: 100%;
+    }
+
+    #sect_dos {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px 0 10px 0;
+    }
+
+    #sect_dos img {
+        padding: 20px;
+        width: 60%;
+    }
+
+
+    #name {
+        border: 1px solid black;
+        padding: 20px;
+        margin-bottom: 20px;
+        width: 50%;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    #correo {
+        border: 1px solid black;
+        width: 50%;
+        padding: 20px;
+        margin-bottom: 20px;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    #coment {
+        border: 1px solid black;
+        width: 50%;
+        height: 30%;
+        padding: 20px;
+        margin-bottom: 20px;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    #enviar {
+        background-color: #F1F6F9;
+        margin: 10px 0 10px 0;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    footer {
+        height: 5%;
+    }
+
+}
+
+
+/* 
+section div p {
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 30px;
+}
+
+#sect_dos {
+    font-size: 1rem;
+    height: 60%;
+    margin-top: 100px;
+}
+
+section div {
+    display: inline-block;
+    text-align: left;
+}
+
+#sub_sect1 {
+    display: inline-block;
+    width: 33%;
+}
+
+#sub_sect2 {
+    display: inline-block;
+    width: 33%;
+}
+
+#sub_sect3 {
+    display: inline-block;
+    width: 33%;
+}
+
+main section section img {
+    width: 100%;
+    height: 250px;
+}
+
+#sect_hist1 {
+    width: 100%;
+}
+
+#sect_hist1 h3 {
+    padding-left: 60px;
+    font-size: 2.5rem;
+}
+
+#ejemplo1 {
+    margin-left: 140px;
+    width: 30%;
+    display: inline;
+    border: 2px solid black;
+}
+
+#ejemplo2 {
+    padding: 60px;
+    font-size: 2rem;
+    vertical-align: top;
+    width: 49%;
+    display: inline-block;
+}
+
+#sect_hist2 {
+    background-color: darkred;
+}
+
+#sect_est {
+    height: 30%;
+}
+
+#sect_est h3 {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+#sect_est p {
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+#sect_vid {
+    text-align: center;
+    height: 30%;
+}
+
+#sect_vid iframe {
+    height: 350px;
+    width: 800px;
+}
+
+.centrar {
+    margin: 0 80px 0 80px;
+    background-color: rgb(184, 189, 189);
+    text-align: center;
+    padding: 80px 0 80px 0;
+}
+
+.posicion {
+    text-align: center;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+.nombres {
+    text-align: center;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.golero {
+    display: inline-block;
+    padding: 0 30px 0 30px;
+}
+
+.defensa {
+    display: inline-block;
+    padding: 0 30px 0 30px;
+}
+
+.mediocampista {
+    display: inline-block;
+    padding: 0 30px 0 30px;
+}
+
+.delanteros {
+    display: inline-block;
+    padding: 0 30px 0 30px;
+}
