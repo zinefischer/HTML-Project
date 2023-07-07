@@ -11,6 +11,8 @@ div img {
     width: 100px;
 }
 
+/* MENU DE NAV */
+
 header {
     background-color: #11009E;
 }
@@ -27,6 +29,12 @@ a {
     font-family: 'Kanit', sans-serif;
 }
 
+li a:hover {
+    padding: 10px;
+    background-color: #0a025b;
+    border-radius: 10%;
+}
+
 main {
     font-family: 'Roboto', sans-serif;
     background-color: #EBECF1;
@@ -34,17 +42,21 @@ main {
     width: 100%;
 }
 
+/* INICIO  */
 
-footer {
-    background-color: #11009E;
-    text-align: center;
+#sectImg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
-footer h3 {
-    color: white;
-    font-family: 'Kanit', sans-serif;
+#sectImg {
+    padding: 0 10px;
 }
 
+#sectImg img {
+    border: 2px solid black;
+}
 
 .title {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -54,17 +66,117 @@ footer h3 {
     font-weight: 600;
 }
 
-#sect_dos {
+.subtitle {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* HISTORIA */
+
+#conteiner_historia {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "texto img"
+        "texto img"
+    ;
+}
+
+#sectUno_hist {
+    grid-area: texto;
+}
+
+#sectDos_hist {
+    grid-area: img;
+}
+
+#sectUno_hist {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 0 100px;
+}
+
+#sectDos_hist {
     display: flex;
-    height: 50%;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
 }
 
-.subtitle {
-    font-size: 2.5rem;
+#imgHisUno {
+    border: 2px solid black;
+    width: 60%;
 }
+
+/* ESTADIO */
+
+#sect_est h3 {
+    text-align: center;
+}
+
+#parrafoTres {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+    padding: 0 100px;
+}
+
+#sect_vid {
+    display: flex;
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+#sect_vid iframe {
+    height: 400px;
+    width: 700px;
+}
+
+/* PLANTEL */
+
+#centrar {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(184, 189, 189);
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+#centrar div img {
+    height: 300px;
+    width: 261px;
+    border: 2px solid black;
+}
+
+.posicion {
+    text-align: center;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+}
+
+.nombres {
+    text-align: center;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+/* 
+.golero {}
+
+.defensa {}
+
+.mediocampista {}
+
+.delantero {}
+ */
+
+/* CONTACTO */
 
 #contacto {
     display: flex;
@@ -109,6 +221,15 @@ footer h3 {
     font-weight: 500;
 }
 
+footer {
+    background-color: #11009E;
+    text-align: center;
+}
+
+footer h3 {
+    color: white;
+    font-family: 'Kanit', sans-serif;
+}
 
 @media screen and (max-width: 768px) {
     a {
@@ -122,13 +243,14 @@ footer h3 {
         height: 100%;
     }
 
-    #sect_dos {
+    #sectImg {
         flex-direction: column;
+        align-items: center;
         justify-content: space-between;
         padding: 10px 0 10px 0;
     }
 
-    #sect_dos img {
+    #sectImg img {
         padding: 20px;
         width: 60%;
     }
@@ -173,138 +295,4 @@ footer h3 {
         height: 5%;
     }
 
-}
-
-
-/* 
-section div p {
-    text-align: center;
-    font-size: 1.5rem;
-    padding: 30px;
-}
-
-#sect_dos {
-    font-size: 1rem;
-    height: 60%;
-    margin-top: 100px;
-}
-
-section div {
-    display: inline-block;
-    text-align: left;
-}
-
-#sub_sect1 {
-    display: inline-block;
-    width: 33%;
-}
-
-#sub_sect2 {
-    display: inline-block;
-    width: 33%;
-}
-
-#sub_sect3 {
-    display: inline-block;
-    width: 33%;
-}
-
-main section section img {
-    width: 100%;
-    height: 250px;
-}
-
-#sect_hist1 {
-    width: 100%;
-}
-
-#sect_hist1 h3 {
-    padding-left: 60px;
-    font-size: 2.5rem;
-}
-
-#ejemplo1 {
-    margin-left: 140px;
-    width: 30%;
-    display: inline;
-    border: 2px solid black;
-}
-
-#ejemplo2 {
-    padding: 60px;
-    font-size: 2rem;
-    vertical-align: top;
-    width: 49%;
-    display: inline-block;
-}
-
-#sect_hist2 {
-    background-color: darkred;
-}
-
-#sect_est {
-    height: 30%;
-}
-
-#sect_est h3 {
-    text-align: center;
-    padding-bottom: 20px;
-    font-size: 2.5rem;
-}
-
-#sect_est p {
-    text-align: center;
-    font-size: 1.7rem;
-}
-
-#sect_vid {
-    text-align: center;
-    height: 30%;
-}
-
-#sect_vid iframe {
-    height: 350px;
-    width: 800px;
-}
-
-.centrar {
-    margin: 0 80px 0 80px;
-    background-color: rgb(184, 189, 189);
-    text-align: center;
-    padding: 80px 0 80px 0;
-}
-
-.posicion {
-    text-align: center;
-    padding: 10px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 500;
-}
-
-.nombres {
-    text-align: center;
-    padding: 10px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 500;
-    font-size: 2rem;
-}
-
-.golero {
-    display: inline-block;
-    padding: 0 30px 0 30px;
-}
-
-.defensa {
-    display: inline-block;
-    padding: 0 30px 0 30px;
-}
-
-.mediocampista {
-    display: inline-block;
-    padding: 0 30px 0 30px;
-}
-
-.delanteros {
-    display: inline-block;
-    padding: 0 30px 0 30px;
 }
