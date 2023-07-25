@@ -20,7 +20,20 @@ $color_secundario: #002f87;
     font-weight: 700;
 }
 
+@mixin subtitulos_centrado {
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
 @mixin parrafos {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+@mixin parrafos_izq {
     text-align: left;
     font-size: 1.3rem;
     font-weight: 600;

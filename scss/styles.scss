@@ -64,12 +64,26 @@ main {
     @include subtitulos
 }
 
+.subtitle_centrado {
+    @include subtitulos_centrado
+}
+
 .parrafo {
     @include parrafos
 }
 
-#img_inicio {
-    margin-bottom: 30px;
+.parrafo_izq {
+    @include parrafos_izq
+}
+
+.img_inicio {
+    display: flex;
+    flex-wrap: wrap;
+    
+    img {
+        margin: 30px;
+        width: 100%;
+    }
 }
 
 /* HISTORIA */
@@ -101,6 +115,9 @@ main {
 
 /* ESTADIO */
 
+.img_estadio {
+    text-align: center;
+}
 
 /* PLANTEL */
 
@@ -281,8 +298,8 @@ footer h3 {
 
 @media screen and (max-width: 350px) {
 
-a {
-    font-size: .3rem;
-}
+    a {
+        font-size: .3rem;
+    }
 
 }
