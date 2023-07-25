@@ -1,0 +1,27 @@
+$font_color_header: #ADDAF6;
+$font_color_hover: #ffffff;
+
+$color_fondo: #cfcfcf;
+$color_fondo_sec: #ffffff;
+
+$color_secundario: #002f87;
+
+@mixin titulos {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 50px 0 50px 0;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+@mixin subtitulos {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+@mixin parrafos {
+    text-align: left;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
