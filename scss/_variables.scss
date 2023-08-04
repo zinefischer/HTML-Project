@@ -1,5 +1,5 @@
-$font_color_header: #ADDAF6;
-$font_color_hover: #ffffff;
+$font_color_header: #ffffff;
+$font_color_hover: #ADDAF6;
 
 $color_fondo: #cfcfcf;
 $color_fondo_sec: #ffffff;
@@ -31,6 +31,7 @@ $color_secundario: #002f87;
     text-align: center;
     font-size: 1.3rem;
     font-weight: 600;
+    margin: 1rem;
 }
 
 @mixin parrafos_izq {

@@ -7,6 +7,14 @@
   width: 100px;
 }
 
+.text-warning img {
+  transition: 0.5s;
+  object-fit: cover;
+}
+.text-warning img:hover {
+  transform: scale(1.1);
+}
+
 /* MENU DE NAV */
 header {
   background-color: #002f87;
@@ -16,20 +24,15 @@ nav ul {
   height: 100%;
 }
 
-nav ul li {
-  list-style: none;
-  font-family: "Archivo", sans-serif;
-}
-
-a {
+.nav-link {
   text-decoration: none;
-  color: #ADDAF6;
-  font-size: 1.5rem;
+  color: #ffffff;
+  font-size: 1.3rem;
   font-family: "Kanit", sans-serif;
 }
 
-li a:hover {
-  color: #ffffff;
+.nav-link:hover {
+  color: #ADDAF6;
 }
 
 main {
@@ -77,6 +80,7 @@ main {
   text-align: center;
   font-size: 1.3rem;
   font-weight: 600;
+  margin: 1rem;
 }
 
 .parrafo_izq {
@@ -87,31 +91,22 @@ main {
 
 .img_inicio {
   display: flex;
-  flex-wrap: wrap;
+  justify-content: center;
 }
 .img_inicio img {
   margin: 30px;
-  width: 100%;
+  width: 60%;
 }
 
 /* HISTORIA */
-#conteiner_historia_uno {
+.conteiner_historia {
   display: flex;
   flex-direction: row;
-}
-
-#conteiner_historia_dos {
-  display: flex;
-  flex-direction: row;
-}
-
-#conteiner_historia_tres {
-  display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .item {
-  margin: 30px;
+  margin: 20px;
   flex-grow: 1;
   flex-basis: 0;
 }
@@ -122,6 +117,10 @@ main {
 /* ESTADIO */
 .img_estadio {
   text-align: center;
+}
+.img_estadio img {
+  margin: 30px;
+  width: 60%;
 }
 
 /* PLANTEL */
@@ -161,6 +160,13 @@ main {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+}
+.jugadores img {
+  transition: 0.5s;
+  object-fit: cover;
+}
+.jugadores img:hover {
+  transform: scale(1.1);
 }
 
 /* CONTACTO */
@@ -211,16 +217,31 @@ footer {
   background-color: #002f87;
   text-align: center;
 }
-
 footer h3 {
   color: white;
-  font-family: "Kanit", sans-serif;
+  padding-top: 5px;
 }
 
-@media screen and (max-width: 768px) {
-  a {
-    font-size: 1rem;
+.sn_icon img {
+  margin: 10px;
+}
+
+@media screen and (max-width: 1025px) {
+  .nav-link {
+    text-align: center;
   }
+  .conteiner_historia {
+    flex-direction: column;
+    align-items: center;
+  }
+  .item img {
+    width: 25rem;
+  }
+  .img_estadio img {
+    width: 25rem;
+  }
+}
+@media screen and (max-width: 768px) {
   .jugadores {
     flex-direction: column;
     align-items: center;
@@ -232,16 +253,6 @@ footer h3 {
 @media screen and (max-width: 600px) {
   body {
     height: 100%;
-  }
-  #sectImg {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 0 10px 0;
-  }
-  #sectImg img {
-    padding: 20px;
-    width: 60%;
   }
   #name {
     border: 1px solid black;
@@ -278,9 +289,31 @@ footer h3 {
     height: 5%;
   }
 }
+@media screen and (max-width: 550px) {
+  .item {
+    margin: 5px;
+  }
+  .item img {
+    width: 20rem;
+  }
+  .img_estadio img {
+    width: 20rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .item {
+    margin: 7px;
+  }
+  .item img {
+    width: 15rem;
+  }
+  .img_estadio img {
+    width: 15rem;
+  }
+}
 @media screen and (max-width: 350px) {
-  a {
-    font-size: 0.3rem;
+  .img_estadio img {
+    width: 13rem;
   }
 }
 

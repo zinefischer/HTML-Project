@@ -12,6 +12,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Roboto:wght@300&family=Ysabeau:wght@500&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
@@ -22,30 +23,52 @@
         href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Roboto:wght@300&family=Ysabeau:wght@500&display=swap"
         rel="stylesheet">
     <title>HISTORIA</title>
+    <meta name="description" content="Historia princiapl del Club Nacional de Football">
 </head>
 
 <body>
-    <header class="container-fluid">
 
-        <div class="row h-100">
+    <header>
 
-            <div
-                class="col-sm-12 col-md-3 col-xl-3 d-flex flex-row justify-content-center align-items-center justify-content-around h-100">
-                <a href="../index.html"><img id="logo" src="../assets/images/LOGOS/logo.png" alt="LOGO ESCUDO"></a>
-            </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
 
-            <nav class="col-sm-12 col-md-9 col-xl-9">
-                <ul class="d-flex flex-row justify-content-center align-items-center justify-content-around h-100">
-                    <li><a href="../index.html">INICIO</a></li>
-                    <li><a href="./historia.html">HISTORIA</a></li>
-                    <li><a href="./estadio.html">ESTADIO</a></li>
-                    <li><a href="./plantel.html">PLANTEL</a></li>
-                    <li><a href="./contacto.html">CONTACTO</a></li>
-                </ul>
-            </nav>
-        </div>
+                <!-- Logo -->
+
+                <a class="navbar-brand " href="../index.html">
+                    <span class="text-warning "><img src="../assets/images/LOGOS/logo.png" alt="LOGO ESCUDO"
+                            id="logo"></span>
+                </a>
+
+                <!-- Botón del menú -->
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="btn btn-primary dropdown-toggle"></span>
+                </button>
+
+                <!-- Elementos del menú -->
+
+                <div class="collapse navbar-collapse" id="menu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./historia.html">HISTORIA</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./estadio.html">ESTADIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./plantel.html">PLANTEL</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">CONTACTO</a>
+                        </li>
 
     </header>
+
     <main>
 
 
@@ -54,12 +77,16 @@
 
                 <h1 class="title">HISTORIA</h1>
 
-                <div id="conteiner_historia_uno">
+                <div class="conteiner_historia">
 
-                    <div class="item">
+                    <div class="item animate__animated animate__backInLeft">
 
-                        <h3 class="subtitle">SUBTITULO</h3>
+                        <h3 class="subtitle">
+                            SUBTITULO
+                        </h3>
+
                         <p class="parrafo_izq">
+
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. In maiores alias, optio ut quas
                             ipsa
                             repudiandae
@@ -73,20 +100,18 @@
                         </p>
                     </div>
 
-                    <div class="item">
+                    <div class="item animate__animated animate__backInRight">
                         <img src="../assets/images/fundadores.jpg" alt="FUNDADORES">
                     </div>
                 </div>
 
-                <div id="conteiner_historia_dos">
+                <div class="conteiner_historia">
 
-                    <div class="item">
-                        <img src="../assets/images/primer_libertadores.jpg" alt="PRIMER LIBERTADORES">
-                    </div>
 
-                    <div class="item">
 
-                        <h3 class="subtitle">
+                    <div class="item animate__animated animate__backInLeft">
+
+                        <h3 class="subtitle ">
                             SUBTITULO
                         </h3>
                         <p class="parrafo_izq">
@@ -97,11 +122,15 @@
 
                     </div>
 
+                    <div class="item animate__animated animate__backInRight">
+                        <img src="../assets/images/primer_libertadores.jpg" alt="PRIMER LIBERTADORES">
+                    </div>
+
                 </div>
 
-                <div id="conteiner_historia_tres">
+                <div class="conteiner_historia">
 
-                    <div class="item">
+                    <div class="item animate__animated animate__backInLeft">
 
                         <h3 class="subtitle">
                             SUBTITULO
@@ -114,13 +143,10 @@
                         </p>
                     </div>
 
-                    <div class="item">
+                    <div class="item animate__animated animate__animated animate__backInRight">
                         <img src="../assets/images/escudo_nacional.jpeg" alt="ESCUDO NACIONAL">
                     </div>
                 </div>
-
-
-
             </div>
         </div>
 
@@ -128,15 +154,20 @@
     </main>
 
     <footer>
-        <h3>Sobre nosotros</h3> <br>
-        <a href="https://www.facebook.com/nacional/?locale=es_LA" target="_blank"><img
-                src="../assets/images/LOGOS/fb.png" alt="FB"></a>
-        <a href="https://twitter.com/Nacional?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
-            target="_blank"><img src="../assets/images/LOGOS/tw.png" alt="TW"></a>
-        <a href="https://www.instagram.com/nacional/?hl=es-la" target="_blank"><img src="../assets/images/LOGOS/ig.png"
-                alt="IG"></a>
-        <a href="https://www.youtube.com/channel/UCN4JBah1YUV9Qd8iQmjNq3Q" target="_blank"><img
-                src="../assets/images/LOGOS/yt.png" alt="YT"></a>
+
+        <h3>SÍGUENOS</h3>
+
+        <div class="sn_icon animate__animated animate__pulse animate__infinite">
+            <a href="https://www.facebook.com/nacional/?locale=es_LA" target="_blank"><img
+                    src="../assets/images/LOGOS/fb.png" alt="FB"></a>
+            <a href="https://twitter.com/Nacional?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"
+                target="_blank"><img src="../assets/images/LOGOS/tw.png" alt="TW"></a>
+            <a href="https://www.instagram.com/nacional/?hl=es-la" target="_blank"><img
+                    src="../assets/images/LOGOS/ig.png" alt="IG"></a>
+            <a href="https://www.youtube.com/channel/UCN4JBah1YUV9Qd8iQmjNq3Q" target="_blank"><img
+                    src="../assets/images/LOGOS/yt.png" alt="YT"></a>
+        </div>
+
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"

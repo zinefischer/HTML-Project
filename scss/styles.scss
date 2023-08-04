@@ -9,6 +9,17 @@
     width: 100px;
 }
 
+.text-warning {
+    img {
+        transition: 0.5s;
+        object-fit: cover;
+    }
+
+    img:hover {
+        transform: scale(1.1);
+    }
+}
+
 /* MENU DE NAV */
 
 header {
@@ -19,19 +30,14 @@ nav ul {
     height: 100%;
 }
 
-nav ul li {
-    list-style: none;
-    font-family: 'Archivo', sans-serif;
-}
-
-a {
+.nav-link {
     text-decoration: none;
     color: $font_color_header;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-family: 'Kanit', sans-serif;
 }
 
-li a:hover {
+.nav-link:hover {
     color: $font_color_hover;
 }
 
@@ -78,33 +84,24 @@ main {
 
 .img_inicio {
     display: flex;
-    flex-wrap: wrap;
-    
+    justify-content: center;
+
     img {
         margin: 30px;
-        width: 100%;
+        width: 60%;
     }
 }
 
 /* HISTORIA */
 
-#conteiner_historia_uno {
+.conteiner_historia {
     display: flex;
     flex-direction: row;
-}
-
-#conteiner_historia_dos {
-    display: flex;
-    flex-direction: row;
-}
-
-#conteiner_historia_tres {
-    display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .item {
-    margin: 30px;
+    margin: 20px;
     flex-grow: 1;
     flex-basis: 0;
 
@@ -117,6 +114,11 @@ main {
 
 .img_estadio {
     text-align: center;
+
+    img {
+        margin: 30px;
+        width: 60%;
+    }
 }
 
 /* PLANTEL */
@@ -159,8 +161,16 @@ main {
     flex-direction: row;
     flex-wrap: wrap;
 
-}
+    img {
+        transition: 0.5s;
+        object-fit: cover;
+    }
 
+    img:hover {
+        transform: scale(1.1);
+    }
+
+}
 
 /* CONTACTO */
 
@@ -212,17 +222,40 @@ main {
 footer {
     background-color: $color_secundario;
     text-align: center;
+
+    h3 {
+        color: white;
+        padding-top: 5px;
+    }
+
 }
 
-footer h3 {
-    color: white;
-    font-family: 'Kanit', sans-serif;
+.sn_icon img {
+    margin: 10px;
 }
+
+@media screen and (max-width: 1025px) {
+
+    .nav-link {
+        text-align: center;
+    }
+
+    .conteiner_historia {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item img {
+        width: 25rem;
+    }
+
+    .img_estadio img {
+        width: 25rem;
+    }
+}
+
 
 @media screen and (max-width: 768px) {
-    a {
-        font-size: 1rem;
-    }
 
     .jugadores {
         flex-direction: column;
@@ -231,7 +264,6 @@ footer h3 {
 
     .jugador {
         display: flex;
-
     }
 
 }
@@ -241,19 +273,6 @@ footer h3 {
     body {
         height: 100%;
     }
-
-    #sectImg {
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        padding: 10px 0 10px 0;
-    }
-
-    #sectImg img {
-        padding: 20px;
-        width: 60%;
-    }
-
 
     #name {
         border: 1px solid black;
@@ -296,10 +315,42 @@ footer h3 {
 
 }
 
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 550px) {
 
-    a {
-        font-size: .3rem;
+    .item {
+        margin: 5px;
+
+        img {
+            width: 20rem;
+        }
+
     }
 
+    .img_estadio img {
+        width: 20rem;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .item {
+        margin: 7px;
+
+        img {
+            width: 15rem;
+        }
+    }
+
+    .img_estadio img {
+        width: 15rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+
+    .img_estadio img {
+        width: 13rem;
+    }
 }
