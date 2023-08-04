@@ -311,6 +311,11 @@ footer h3 {
     width: 15rem;
   }
 }
+@media screen and (max-width: 426px) {
+  .title {
+    font-size: 2rem;
+  }
+}
 @media screen and (max-width: 350px) {
   .img_estadio img {
     width: 13rem;
