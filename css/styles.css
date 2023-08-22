@@ -30,11 +30,11 @@ nav ul {
   font-size: 1.3rem;
   font-family: "Kanit", sans-serif;
 }
-
 .nav-link:hover {
   color: #ADDAF6;
 }
 
+/* MAIN */
 main {
   font-family: "Roboto", sans-serif;
   background-color: #cfcfcf;
@@ -51,7 +51,7 @@ main {
   background-color: #ffffff;
   display: inline-block;
   height: 100%;
-  width: 80%;
+  width: 90%;
 }
 
 /* INICIO  */
@@ -94,7 +94,7 @@ main {
   justify-content: center;
 }
 .img_inicio img {
-  margin: 30px;
+  margin-bottom: 20px;
   width: 60%;
 }
 
@@ -226,7 +226,7 @@ footer h3 {
   margin: 10px;
 }
 
-@media screen and (max-width: 1025px) {
+@media screen and (max-width: 1024px) {
   .nav-link {
     text-align: center;
   }
@@ -235,13 +235,16 @@ footer h3 {
     align-items: center;
   }
   .item img {
-    width: 25rem;
+    width: 800px;
   }
   .img_estadio img {
     width: 25rem;
   }
 }
 @media screen and (max-width: 768px) {
+  .item img {
+    width: 500px;
+  }
   .jugadores {
     flex-direction: column;
     align-items: center;
@@ -249,22 +252,17 @@ footer h3 {
   .jugador {
     display: flex;
   }
-}
-@media screen and (max-width: 600px) {
-  body {
-    height: 100%;
-  }
   #name {
     border: 1px solid black;
     padding: 20px;
     margin-bottom: 20px;
-    width: 50%;
+    width: 80%;
     font-size: 1rem;
     font-weight: 500;
   }
   #correo {
     border: 1px solid black;
-    width: 50%;
+    width: 80%;
     padding: 20px;
     margin-bottom: 20px;
     font-size: 1rem;
@@ -272,7 +270,7 @@ footer h3 {
   }
   #coment {
     border: 1px solid black;
-    width: 50%;
+    width: 80%;
     height: 30%;
     padding: 20px;
     margin-bottom: 20px;
@@ -285,40 +283,32 @@ footer h3 {
     font-size: 1rem;
     font-weight: 500;
   }
+}
+@media screen and (max-width: 425px) {
+  .item {
+    margin: 20px;
+  }
+  .item img {
+    width: 15rem;
+  }
+  .img_inicio img {
+    margin-bottom: 5px;
+    width: 80%;
+  }
+  .title {
+    font-size: 2rem;
+  }
+  body {
+    height: 95%;
+  }
   footer {
     height: 5%;
   }
 }
-@media screen and (max-width: 550px) {
-  .item {
-    margin: 5px;
-  }
-  .item img {
-    width: 20rem;
-  }
-  .img_estadio img {
-    width: 20rem;
-  }
-}
-@media screen and (max-width: 450px) {
-  .item {
-    margin: 7px;
-  }
-  .item img {
-    width: 15rem;
-  }
-  .img_estadio img {
-    width: 15rem;
-  }
-}
-@media screen and (max-width: 426px) {
-  .title {
-    font-size: 2rem;
-  }
-}
-@media screen and (max-width: 350px) {
+@media screen and (max-width: 320px) {
   .img_estadio img {
     width: 13rem;
+    margin: 5px;
   }
 }
 

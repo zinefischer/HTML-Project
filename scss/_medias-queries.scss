@@ -1,0 +1,116 @@
+// 1024px
+
+@mixin screen-laptop {
+
+    .nav-link {
+        text-align: center;
+    }
+
+    .conteiner_historia {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item img {
+        width: 800px;
+    }
+
+    .img_estadio img {
+        width: 25rem;
+    }
+}
+
+// 768px
+
+@mixin screen-tablet {
+    .item img {
+        width: 500px;
+    }
+
+    .jugadores {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .jugador {
+        display: flex;
+    }
+
+    #name {
+        border: 1px solid black;
+        padding: 20px;
+        margin-bottom: 20px;
+        width: 80%;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    #correo {
+        border: 1px solid black;
+        width: 80%;
+        padding: 20px;
+        margin-bottom: 20px;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    #coment {
+        border: 1px solid black;
+        width: 80%;
+        height: 30%;
+        padding: 20px;
+        margin-bottom: 20px;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+
+    #enviar {
+        background-color: #F1F6F9;
+        margin: 10px 0 10px 0;
+        font-size: 1rem;
+        font-weight: 500;
+    }
+}
+
+// 425px
+
+@mixin screen-mobile-l {
+
+    .item {
+        margin: 20px;
+
+        img {
+            width: 15rem;
+        }
+    }
+
+    .img_inicio {
+
+        img {
+            margin-bottom: 5px;
+            width: 80%;
+        }
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    body {
+        height: 95%;
+    }
+
+    footer {
+        height: 5%;
+    }
+}
+
+// 320px
+
+@mixin screen-mobile-s {
+
+    .img_estadio img {
+        width: 13rem;
+        margin: 5px;
+    }
+}

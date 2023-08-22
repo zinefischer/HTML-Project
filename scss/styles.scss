@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'medias-queries';
 
 * {
     margin: 0;
@@ -10,13 +11,14 @@
 }
 
 .text-warning {
+
     img {
         transition: 0.5s;
         object-fit: cover;
-    }
 
-    img:hover {
-        transform: scale(1.1);
+        &:hover {
+            transform: scale(1.1);
+        }
     }
 }
 
@@ -35,11 +37,13 @@ nav ul {
     color: $font_color_header;
     font-size: 1.3rem;
     font-family: 'Kanit', sans-serif;
+
+    &:hover {
+        color: $font_color_hover;
+    }
 }
 
-.nav-link:hover {
-    color: $font_color_hover;
-}
+/* MAIN */
 
 main {
     font-family: 'Roboto', sans-serif;
@@ -57,7 +61,7 @@ main {
     background-color: $color_fondo_sec;
     display: inline-block;
     height: 100%;
-    width: 80%;
+    width: 90%;
 }
 
 /* INICIO  */
@@ -87,7 +91,7 @@ main {
     justify-content: center;
 
     img {
-        margin: 30px;
+        margin-bottom: 20px;
         width: 60%;
     }
 }
@@ -164,12 +168,11 @@ main {
     img {
         transition: 0.5s;
         object-fit: cover;
-    }
 
-    img:hover {
-        transform: scale(1.1);
+        &:hover {
+            transform: scale(1.1);
+        }
     }
-
 }
 
 /* CONTACTO */
@@ -227,138 +230,27 @@ footer {
         color: white;
         padding-top: 5px;
     }
-
 }
 
 .sn_icon img {
     margin: 10px;
 }
 
-@media screen and (max-width: 1025px) {
+// MEDIA QUERIES 
 
-    .nav-link {
-        text-align: center;
-    }
 
-    .conteiner_historia {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .item img {
-        width: 25rem;
-    }
-
-    .img_estadio img {
-        width: 25rem;
-    }
+@media screen and (max-width: 1024px) {
+    @include screen-laptop
 }
-
 
 @media screen and (max-width: 768px) {
-
-    .jugadores {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .jugador {
-        display: flex;
-    }
-
+    @include screen-tablet
 }
 
-@media screen and (max-width: 600px) {
-
-    body {
-        height: 100%;
-    }
-
-    #name {
-        border: 1px solid black;
-        padding: 20px;
-        margin-bottom: 20px;
-        width: 50%;
-        font-size: 1rem;
-        font-weight: 500;
-    }
-
-    #correo {
-        border: 1px solid black;
-        width: 50%;
-        padding: 20px;
-        margin-bottom: 20px;
-        font-size: 1rem;
-        font-weight: 500;
-    }
-
-    #coment {
-        border: 1px solid black;
-        width: 50%;
-        height: 30%;
-        padding: 20px;
-        margin-bottom: 20px;
-        font-size: 1rem;
-        font-weight: 500;
-    }
-
-    #enviar {
-        background-color: #F1F6F9;
-        margin: 10px 0 10px 0;
-        font-size: 1rem;
-        font-weight: 500;
-    }
-
-    footer {
-        height: 5%;
-    }
-
+@media screen and (max-width: 425px) {
+    @include screen-mobile-l
 }
 
-@media screen and (max-width: 550px) {
-
-    .item {
-        margin: 5px;
-
-        img {
-            width: 20rem;
-        }
-
-    }
-
-    .img_estadio img {
-        width: 20rem;
-    }
-
-}
-
-@media screen and (max-width: 450px) {
-
-    .item {
-        margin: 7px;
-
-        img {
-            width: 15rem;
-        }
-    }
-
-    .img_estadio img {
-        width: 15rem;
-    }
-}
-
-@media screen and (max-width: 426px) {
-
-.title {
-    font-size: 2rem;
-}
-
-}
-
-@media screen and (max-width: 350px) {
-
-
-    .img_estadio img {
-        width: 13rem;
-    }
+@media screen and (max-width: 320px) {
+    @include screen-mobile-s
 }
